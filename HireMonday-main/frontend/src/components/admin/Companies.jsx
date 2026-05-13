@@ -13,7 +13,6 @@ const Companies = () => {
     useGetAllCompanies();
     const navigate = useNavigate();
 
-    // Use a background image similar to the home page for consistency
     const bgImage = 'https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uc3RydWN0aW9ufGVufDB8MHwwfHx8MA%3D%3D';
 
     return (

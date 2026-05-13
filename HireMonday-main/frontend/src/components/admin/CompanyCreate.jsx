@@ -13,7 +13,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Building2, ArrowLeft, Rocket, Loader2 } from 'lucide-react'
 import Navbar from '../shared/Navbar'
 
-// Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
