@@ -1,40 +1,38 @@
-# RebalancePro Portfolio Rebalancing Application
+# DevOps Project - CI/CD Pipeline Automation using Jenkins and Docker
 
-A full-stack web application that compares a client’s mutual fund portfolio against a model portfolio and generates automated portfolio rebalancing recommendations.
+A complete DevOps automation project that implements Continuous Integration and Continuous Deployment (CI/CD) for a MERN stack application using Jenkins and Docker. The project automates build, deployment, containerization, and deployment verification workflows.
 
 ---
 
 ## 🚀 Features
 
-- Portfolio comparison with model portfolio
-- Automated rebalancing calculations
-- REST API integration
-- Responsive frontend UI
-- SQLite database integration
-- Docker containerization
-- Jenkins CI/CD pipeline automation
-- GitHub integration for version control
+- Automated CI/CD pipeline using Jenkins
+- Docker containerization for frontend and backend
+- GitHub integration with Jenkins webhooks
+- MERN stack deployment automation
+- Docker Compose multi-container setup
+- Automated deployment verification
+- Faster and reliable software delivery
+- Reduced manual deployment effort
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React 18
-- Tailwind CSS
+- React.js
 
 ### Backend
 - Node.js
 - Express.js
-- better-sqlite3
 
 ### Database
-- SQLite
+- MongoDB
 
-### DevOps
+### DevOps Tools
+- Jenkins
 - Docker
 - Docker Compose
-- Jenkins
 - GitHub
 
 ---
@@ -42,30 +40,58 @@ A full-stack web application that compares a client’s mutual fund portfolio ag
 ## 📂 Project Structure
 
 ```bash
-RebalancePro/
+DevOps-Project/
 │
-├── frontend/          # React frontend
-├── backend/           # Node.js backend
-├── docker-compose.yml
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── Dockerfile
+│
+├── backend/
+│   ├── routes/
+│   ├── models/
+│   ├── controllers/
+│   ├── package.json
+│   └── Dockerfile
+│
 ├── Jenkinsfile
-├── README.md
-└── package.json
+├── docker-compose.yml
+└── README.md
 ```
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Setup Instructions
 
-### 1. Clone Repository
+### 1️⃣ Clone Repository
 
 ```bash
 git clone <your-repository-url>
-cd RebalancePro
+cd DevOps-Project
 ```
 
 ---
 
-### 2. Backend Setup
+### 2️⃣ Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Frontend runs on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+### 3️⃣ Backend Setup
+
+Open another terminal:
 
 ```bash
 cd backend
@@ -81,27 +107,9 @@ http://localhost:5000
 
 ---
 
-### 3. Frontend Setup
-
-Open another terminal:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend runs on:
-
-```bash
-http://localhost:5173
-```
-
----
-
 ## 🐳 Docker Setup
 
-### Build & Run Containers
+### Build and Run Containers
 
 ```bash
 docker-compose up --build
@@ -117,14 +125,12 @@ docker-compose down
 
 ## 🔄 Jenkins CI/CD Pipeline
 
-The project includes Jenkins-based CI/CD automation for continuous integration and deployment.
-
-### Pipeline Workflow
+The Jenkins pipeline automates the following workflow:
 
 1. GitHub code push
-2. Jenkins pipeline trigger
+2. Jenkins webhook trigger
 3. Dependency installation
-4. Docker image build
+4. Docker image creation
 5. Container deployment
 6. Deployment verification
 
@@ -140,26 +146,27 @@ The project includes Jenkins-based CI/CD automation for continuous integration a
 
 ---
 
-## 🧪 Testing
+## 🧪 Testing & Validation
 
-The application was tested for:
+The project was tested for:
 
+- Successful Jenkins pipeline execution
+- Docker container functionality
 - API response validation
 - Frontend rendering
-- Backend functionality
-- Docker container execution
-- CI/CD pipeline execution
+- Database connectivity
+- Container communication
 - Deployment verification
 
 ---
 
-## 📈 Implementation Outcome
+## 📈 Project Outcome
 
-- Automated deployments
-- Faster build cycles
-- Reduced manual deployment effort
+- Automated deployment workflows
+- Faster build and deployment cycles
 - Improved deployment reliability
-- Containerized deployment architecture
+- Reduced human intervention
+- Consistent runtime environments using Docker
 
 ---
 
@@ -184,8 +191,8 @@ The application was tested for:
 
 - Jenkins Documentation
 - Docker Documentation
+- MongoDB Documentation
 - React Documentation
 - Node.js Documentation
 - Express.js Documentation
-- SQLite Documentation
 - GitHub Documentation
